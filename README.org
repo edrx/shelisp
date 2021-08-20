@@ -3,11 +3,11 @@
 #   http://angg.twu.net/shelisp/README.org
 #           (find-angg "shelisp/README.org")
 # Author: Eduardo Ochs <eduardoochs@gmail.com>
-#
+# 
 # Based on: (find-angg "edrxrepl/README.org")
 #           (find-angg "2021-1-C2-C3/README.org")
 #           (find-angg "2020-2-C2-C3/README.org")
-#
+# 
 # Some eev-isms:
 # (defun c  () (interactive) (eek "C-c C-e h h"))
 # (defun v  () (interactive) (brg     "~/shelisp/README.html"))
@@ -16,7 +16,7 @@
 # (defun o  () (interactive) (find-angg "shelisp/README.org"))
 # (code-c-d "shelisp"  "~/.emacs.d/elpa/shelisp-0.9.1/")
 # (code-c-d "shelispz" "~/shelisp/")
-#
+# 
 #   (find-shelispfile  "shelisp.el")
 #   (find-shelispzfile "shelisp.el")
 #   (find-es "lua5" "Repl")
@@ -54,6 +54,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/edrx/shelisp.git
 
+git push -u origin main
 
 # (magit-status "~/shelisp/")
 # (find-gitk    "~/shelisp/")
