@@ -41,11 +41,14 @@ rm -Rf .git/
 git init
 git add README.org
 git add shelisp.el
+
+rm -v .gitignore
 # git add .gitignore
 
 cd ~/shelisp/
 rm -v *~
 rm -v *.html
+laf
 
 git commit -m "first commit"
 git branch -M main
