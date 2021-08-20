@@ -1,0 +1,69 @@
+# This file:
+#   http://angg.twu.net/shelisp/README.org.html
+#   http://angg.twu.net/shelisp/README.org
+#           (find-angg "shelisp/README.org")
+# Author: Eduardo Ochs <eduardoochs@gmail.com>
+#
+# Based on: (find-angg "edrxrepl/README.org")
+#           (find-angg "2021-1-C2-C3/README.org")
+#           (find-angg "2020-2-C2-C3/README.org")
+#
+# Some eev-isms:
+# (defun c  () (interactive) (eek "C-c C-e h h"))
+# (defun v  () (interactive) (brg     "~/shelisp/README.html"))
+# (defun cv () (interactive) (c) (v))
+# (defun e  () (interactive) (find-angg "shelisp/shelisp.el"))
+# (defun o  () (interactive) (find-angg "shelisp/README.org"))
+# (code-c-d "shelisp"  "~/.emacs.d/elpa/shelisp-0.9.1/")
+# (code-c-d "shelispz" "~/shelisp/")
+#
+#   (find-shelispfile  "shelisp.el")
+#   (find-shelispzfile "shelisp.el")
+#   (find-es "lua5" "Repl")
+#   (find-es "magit" "edrxrepl")
+#   (find-angg "ORG/agda.org")
+#   (find-es "magit" "magit-on-eev-2020oct28")
+# 
+# (find-orgnode "Table of Contents")
+#+OPTIONS: toc:nil num:nil
+
+This is a modified version of Michael R. Mauger's ~shelisp.el~.
+
+See the comments at the top of the elisp file for details.
+
+
+#+begin_comment
+ (eepitch-shell)
+ (eepitch-kill)
+ (eepitch-shell)
+cd ~/shelisp/
+rm -Rf .git/
+git init
+git add README.org
+git add shelisp.el
+# git add .gitignore
+
+cd ~/shelisp/
+rm -v *~
+rm -v *.html
+
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/edrx/shelisp.git
+
+
+# (magit-status "~/shelisp/")
+# (find-gitk    "~/shelisp/")
+#
+#   (s)tage all changes
+#   (c)ommit -> (c)reate
+#   (P)ush -> (p)ushremote
+#   https://github.com/edrx/shelisp
+
+#+end_comment
+
+# Local Variables:
+# coding:               utf-8-unix
+# modes:                (org-mode fundamental-mode)
+# org-html-postamble:   nil
+# End:
